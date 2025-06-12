@@ -990,6 +990,7 @@ section:nth-child(odd) .animate.scroll,
         width: 38px;
         height: 38px;
     }
+    
 }
 
 @media (max-width: 462px) {
@@ -1029,6 +1030,14 @@ section:nth-child(odd) .animate.scroll,
 
     .home-content h1 {
         font-size: 5rem;
+    }
+     .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
     }
 }
 
