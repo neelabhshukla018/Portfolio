@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio</title>
+<script src="https://kit.fontawesome.com/c44dbc2ee4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+  <a href="#" class="logo">Neelabh's <span style="color: rgb(255, 255, 0);">Portfolio</span></a>
+
+  <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+  <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">My Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume" id="resume-link">Resume</a>
+      <a href="#contact">Contact</a>
+      
+      <span class="active-nav"></span>
+      <span class="animate" style="--i:2;"></span>
+  </nav>
+</header>
+
+<!-- Modal for Resume -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content animated">
+    <span class="close-button" id="closeModal">&times;</span>
+    <!-- Embed your resume PDF or content here -->
+    <iframe src="assets/Neelabh Shukla_Resume.pdf" width="100%" height="600px"></iframe>
+  </div>
+</div>
+
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span style="color: rgb(21, 255, 0);">Neelabh Shukla</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Front-End Developer</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>A <span style="color: rgb(255, 0, 217);">Front-End Web Developer</span> skilled in HTML, CSS, and JavaScript builds engaging, responsive user interfaces using frameworks like React.js and Angular. Proficient in creating visually appealing and interactive web applications, they ensure seamless user experiences across devices. 
+           </p>
+                <span class="animate" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Welcome 🤗</a>
+                <a href="#" class="btn">Stranger! </a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a target="_blank" href="https://leetcode.com/u/sirneelabhshuklaji/" style="--i:6"><i class="fa-solid fa-code"></i></a>
+                <a target="_blank" href="https://github.com/neelabhshukla018" style="--i:9"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.instagram.com/arjun_dream_0007/ " ><i class="fa-brands fa-instagram fa-beat-fade"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/neelabh-shukla-45b88a2a5/"><i class="fa-brands fa-linkedin fa-shake"></i></a>
+            <span class="animate" style="--i:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        
+
+        <div class="about-content">
+            <h3>Hii  Stranger! 😊<span class="animate scroll" style="--i:3;"></span></h3>
+            <p>Hii (<span style="color: rgb(255, 47, 0);">Namaste! 🙏 </span>),<br>
+                My name is <span style="color: rgb(255, 255, 0);">Neelabh Shukla</span>, 
+    and I am from <span style="color: rgb(255, 0, 217);">Sultanpur, Uttar Pradesh</span>.
+    I completed my 10+2 education from <span style="color: rgb(0, 255, 26);">Saraswati Vidya Mandir</span> 
+    in Sultanpur. Currently, 
+    I am pursuing a  <span style="color: rgb(0, 149, 255);">B.Tech degree in Computer Science</span>   and Engineering from <span style="color: orange;">Shri Ramswaroop Memorial University</span> 
+    in Lucknow, Uttar Pradesh. I successfully completed my first year with a CGPA of 8, and I am now in my second year of this academic journey. 
+    I have a strong interest in
+    <span style="color: rgb(179, 255, 0);">Full-Stack Web Development.</span> 
+
+    I have already covered the front-end part and am now working to master the backend. Additionally, I practice Data Structures and Algorithms in Java to enhance my problem-solving skills. I love watching cricket and traveling. You can find more details by clicking on the
+    <span style="color: rgb(255, 0, 0);">"Resume"</span>
+                <span class="animate scroll" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box btns">
+                <a href="#contact" class="btn">Contact Me</a>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2021</div>
+                            <h3>Ghazi Learner's Academy</h3>
+                            <p>Hey i Completed My 10th grade with overall 83%. It was a valuable learning experience that enhanced my skills, discipline, and determination, preparing me for future academic and professional pursuits.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+                            <h3>Saraswati Vidya Mandir</h3>
+                            <p>Hey i Completed My 12th grade with overall 83%. This achievement strengthened my foundational knowledge, discipline, and determination, motivating me to pursue my B.Tech in Computer Science with enthusiasm.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2028</div>
+                            <h3>Shri RamSwaroop Memorial University- (2nd)</h3>
+                            <p>Currently pursuing B.Tech in Computer Science, I have completed my first year with a CGPA of 7.9. I am eager to continue learning and achieving success in my academic journey.</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>01-May-24 to 01-Aug-24</div>
+                            <h3>Intern Certify</h3>
+                            <p>I worked as a Front-End Web Developer intern for three months, during which I developed four major websites. This experience enhanced my skills in HTML, CSS, and JavaScript, and improved my ability to collaborate on projects, delivering user-friendly and responsive websites efficiently.</p>
+                        </div>
+                    </div>
+
+
+<span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ==================================PROJECTS============================================== -->
+ <section>
+      <div class="main-text">
+  <h2> My Latest <span style="color: rgb(255, 0, 217);">Projects</span></h2>
+</div>
+<h3 class="project-subheading"><span style="color: rgb(0, 255, 157);">Travel4Ever</span></h3>
+<div class="project-content">
+  <p><span style="color: rgb(226, 194, 194);">It showcases the beauty of Kashmir, covering all popular destinations, hotels, and famous activities. The site offers a seamless user experience across devices, with vibrant visuals, informative content, and easy navigation to help travelers plan their perfect Kashmir getaway effortlessly.</p></span></p>
+</div>
+
+
+</div>
+<h3 class="project-subheading"><span style="color: rgb(0, 255, 157);">EarthWear</span></h3>
+<div class="project-content">
+  <p><span style="color: rgb(226, 194, 194);">EarthWear offers sustainable, eco-friendly clothing made from organic materials, promoting environmental consciousness and stylish fashion choices for a healthier planet and a greener future.</span></p>
+</div>
+
+
+</div>
+<h3 class="project-subheading"><span style="color: rgb(0, 255, 157);">Tut&Tutor</span></h3>
+<div class="project-content">
+  <p><span style="color: rgb(226, 194, 194);">"Expert tutoring services to help students excel academically with personalized lessons, support, and guidance across various subjects."</span></p>
+</div>
+
+
+</div>
+<h3 class="project-subheading"><span style="color: rgb(0, 255, 157);">YumCart</span></h3>
+<div class="project-content">
+  <p><span style="color: rgb(226, 194, 194);">Yumcart is your go-to food website for delicious recipes, restaurant reviews, and meal ideas, helping you discover tasty dishes and enjoy flavorful dining experiences anytime.</span></p>
+</div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>React <span>55%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>67%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Graphic Design <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>SEO Marketing <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+<div class="contact-list">
+                <li><i class="fa-sharp fa-solid fa-paper-plane"></i> neelabhhshukla79@gmail.com</li>
+                <li><i class="fa-sharp fa-solid fa-phone"></i>+91-7307551612</li>
+            </div>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p><span style="color: rgb(6, 255, 201);">Hey Stranger! 😊 Thank You For Giving Me Your Precious Time || Made With ❤️ By NEELABH_Shukla || If "I am HTML then you are my CSS"</span></p>
+
+            <span class="animate scroll" style="--i:1;"></span>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
