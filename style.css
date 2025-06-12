@@ -1104,30 +1104,31 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* Animation styles omitted for brevity */
-
-@media (max-width: 371px) {
+/* Responsive Footer for Mobile */
+@media (max-width: 768px) {
     .footer {
-        flex-direction: column-reverse; /* stack items vertically in reverse order */
-        align-items: center; /* center items horizontally */
-        padding: 1.5rem 5%; /* reduce padding for small screens */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 5%;
+        gap: 1.5rem;
     }
 
     .footer-text p {
-        font-size: 1.2rem; /* smaller font size for readability */
-        margin-top: 1rem; /* space above paragraph if needed */
-        text-align: center; /* center text on small screens */
+        font-size: 1.3rem;
+        line-height: 1.6;
     }
 
     .footer-iconTop {
-        margin-top: 1.5rem; /* space between items when stacked */
-        width: 100%; /* full width for icons/buttons */
-        display: flex;
-        justify-content: center; /* center icons/buttons */
+        margin-top: 1rem;
     }
 
     .footer-iconTop a {
         padding: 0.6rem;
-        font-size: 2rem; /* slightly smaller icon size */
+    }
+
+    .footer-iconTop a i {
+        font-size: 2rem;
     }
 }
