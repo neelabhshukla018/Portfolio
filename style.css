@@ -1104,28 +1104,3 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* Apply faster animation in your icon styles */
-.contact-icons i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  border: 2px solid #0ef;
-  border-radius: 50%;
-  font-size: 30px;
-  color: #0ef;
-  text-decoration: none;
-  margin: 30px 15px 30px 0;
-  transition: .5s ease;
-  opacity: 0;
-
-  /* Faster animation */
-  animation: slideLeft 0.2s ease forwards;
-  animation-delay: calc(.2s * var(--i));
-}
-
-
-
-
