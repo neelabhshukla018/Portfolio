@@ -1007,7 +1007,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .footer {
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
     .footer p {
@@ -1032,7 +1032,7 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5rem;
     }
      .footer {
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
     .footer p {
