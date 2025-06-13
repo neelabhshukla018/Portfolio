@@ -1104,18 +1104,18 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* ========= MOBILE RESPONSIVE FOOTER + DISABLE ANIMATION ========= */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 2rem 5%;
         text-align: center;
-        gap: 2rem;
     }
 
     .footer-text {
         width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     .footer-text p {
@@ -1135,17 +1135,5 @@ section:nth-child(odd) .animate.scroll,
 
     .footer-iconTop a i {
         font-size: 2rem;
-    }
-
-    /* Hide animation span elements on mobile */
-    .footer .animate {
-        display: none !important;
-    }
-
-    /* Disable animation properties completely */
-    .animate,
-    .animate.scroll {
-        animation: none !important;
-        transition: none !important;
     }
 }
