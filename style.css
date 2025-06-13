@@ -1104,3 +1104,45 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 5%;
+        text-align: center;
+    }
+
+    .footer-text {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-text p {
+        font-size: 1.4rem;
+        word-wrap: break-word;
+    }
+
+    .footer-iconTop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-iconTop a {
+        padding: 0.6rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 1.8rem;
+    }
+}
