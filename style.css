@@ -1104,36 +1104,93 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem 5%;
-        text-align: center;
-    }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
 
-    .footer-text {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
+.footer-text,
+.footer-iconTop {
+    position: relative;
+}
 
-    .footer-text p {
-        font-size: 1.4rem;
-        word-wrap: break-word;
-    }
+.footer-text p {
+    font-size: 1.6rem;
+}
 
-    .footer-iconTop {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
 
-    .footer-iconTop a {
-        padding: 0.6rem;
-    }
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .2s;
+}
 
-    .footer-iconTop a i {
-        font-size: 2rem;
-    }
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .2s;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--main-color);
+}
+
+/* ANIMATION RELOAD AND SCROLL */
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 98;
+}
+
+.animate.home-img {
+    width: 50%;
+}
+
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate,
+.home.show-animate .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.animate.scroll {
+    transition: 1s ease;
+    transition-delay: calc(.1s / var(--i));
+    animation: none;
+}
+
+section:nth-child(odd) .animate.scroll,
+.footer .animate.scroll {
+    background: var(--second-bg-color);
 }
