@@ -1104,18 +1104,18 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* Responsive Footer without animation on mobile */
-@media (max-width: 440px) {
+/* ========= MOBILE RESPONSIVE FOOTER + DISABLE ANIMATION ========= */
+@media (max-width: 768px) {
     .footer {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 2rem 5%;
         text-align: center;
+        gap: 2rem;
     }
 
     .footer-text {
         width: 100%;
-        margin-bottom: 1.5rem;
     }
 
     .footer-text p {
@@ -1137,10 +1137,14 @@ section:nth-child(odd) .animate.scroll,
         font-size: 2rem;
     }
 
-    /* Disable animations on mobile */
+    /* Hide animation span elements on mobile */
+    .footer .animate {
+        display: none !important;
+    }
+
+    /* Disable animation properties completely */
     .animate,
-    .animate.scroll,
-    .home.show-animate .animate {
+    .animate.scroll {
         animation: none !important;
         transition: none !important;
     }
