@@ -1104,31 +1104,3 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* Responsive Footer for Mobile */
-@media (max-width: 371px) {
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem 5%;
-        gap: 1.5rem;
-    }
-
-    .footer-text p {
-        font-size: 1.3rem;
-        line-height: 1.6;
-    }
-
-    .footer-iconTop {
-        margin-top: 1rem;
-    }
-
-    .footer-iconTop a {
-        padding: 0.6rem;
-    }
-
-    .footer-iconTop a i {
-        font-size: 2rem;
-    }
-}
