@@ -1104,7 +1104,7 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-/* Mobile Responsiveness */
+/* Responsive Footer without animation on mobile */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -1136,13 +1136,12 @@ section:nth-child(odd) .animate.scroll,
     .footer-iconTop a i {
         font-size: 2rem;
     }
-}
-@media (max-width: 480px) {
-    .footer-text p {
-        font-size: 1.2rem;
-    }
 
-    .footer-iconTop a i {
-        font-size: 1.8rem;
+    /* Disable animations on mobile */
+    .animate,
+    .animate.scroll,
+    .home.show-animate .animate {
+        animation: none !important;
+        transition: none !important;
     }
 }
